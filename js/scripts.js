@@ -1,10 +1,8 @@
 $(document).ready(function(){
   var flavors =["chocolate","vanilla","strawberry","rocky-road"]
-
-  flavors.forEach(function(flavor) {
-  $("#list").append("<li>" + flavor + "</li>");
-
-    // var favorite = $("." + flavors)
-    // $(flavors).text();
-  });
+  alert(flavors);
+  alert(flavors[2]);
+  for (var counter = 0; counter < flavors.length; counter += 1) {
+    $("#list").append("<li>" + flavors[counter] + "</li>");
+  }
 });
